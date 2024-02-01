@@ -1,12 +1,8 @@
 import React from "react";
-import SingleDay from "../SingleDay/SingleDay";
+
 import styles from "./MainComponent.module.css";
 
 const MainComponent = ({
-  fontFamily,
-  primaryColor,
-  secondaryColor,
-  textColor,
   weekNumber,
   placeName,
   withWhoom,
@@ -14,15 +10,7 @@ const MainComponent = ({
   scheduleInfo,
 }) => {
   return (
-    <div
-      className={styles.mainWrapper}
-      style={{
-        "--primaryColor": primaryColor,
-        "--secondaryColor": secondaryColor,
-        "--textColor": textColor,
-        fontFamily: fontFamily,
-      }}
-    >
+    <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
         <div>
           <h2 className={styles.weekNumber}>

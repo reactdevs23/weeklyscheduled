@@ -3,7 +3,7 @@ import MainComponent from "./components/MaiComponent/MainComponent";
 function App() {
   const data = {
     fontFamily: "'Space Mono', monospace",
-    primaryColor: "#ff",
+    bgColor: "#fff",
     secondaryColor: "#D9D9D9",
     textColor: "#000",
     weekNumber: "Week 4",
@@ -117,8 +117,10 @@ function App() {
   return (
     <div
       style={{
-        "--primaryColor": data.primaryColor,
+        "--bgColor": data.bgColor,
         "--secondaryColor": data.secondaryColor,
+        "--textColor": data.textColor,
+        fontFamily: data.fontFamily,
       }}
     >
       <MainComponent {...data} />
